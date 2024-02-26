@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    height: 100dvh;
+    height: 100vh;
+    background-color: var(--Light-grayish-blue);
+    overflow: hidden;
+}
+
+main {
+    width: 80%;
+    height: 70vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,220px 220px 220px 205px);
+    grid-template-rows: repeat(2,270px 250px);
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira"
+    ;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+figure img {
+    border-radius: 50%;
+    width: 10%;
+}
+
+figcaption {
+    padding-left: 15px;
+    color: var(--White);
+    font-weight: 600;
+}
+
+figcaption span {
+    opacity: 0.5;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 90%;
+    height: 90%;
+}
+
+p {
+    opacity: 0.7;
+    font-weight: 100;
+}
+
+/* jeanette section */
+
+.jeanette {
+    grid-area: jeanette;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+.jeanette img {
+    width: 12%;
+}
+
+.jeanette figcaption {
+    color: var(--Very-dark-blackish-blue)
+}
+
+.jeanette h2 {
+    color: var(--Very-dark-grayish-blue);
+    padding: 10px 0px 20px;
+    font-weight: 500;
+}
+
+.jeanette p {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+/* kira section */
+
+.kira {
+    grid-area: kira;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+.kira img {
+    width: 12%;
+}
+
+.kira figcaption {
+    color: var(--Very-dark-blackish-blue);
+}
+
+.kira h2 {
+    color: var(--Very-dark-grayish-blue);
+    padding: 10px 0px 20px;
+    font-weight: 500;
+}
+
+.kira p {
+    color: var(--Very-dark-grayish-blue);
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+/* patrick */
+
+.patrick {
+    grid-area: patrick;
+    background-color: var(--Very-dark-blackish-blue);
+    color: var(--White);
+    border-radius: 10px;
+}
+
+.patrick figure img {
+    border: 2px solid var(--Moderate-violet);
+    width: 6%;
+}
+
+.patrick figcaption{
+    font-size: 0.8em;
+    padding-left: 15px;
+}
+
+.patrick h2 {
+    padding: 10px 0px 20px;
+    font-weight: 500;
+}
+
+/* daniel section */
+
+.daniel {
+    grid-area: daniel;
+    background-image: url('images/image-daniel.jpg');
+    background-color: var(--Moderate-violet); 
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    color: var(--White);
+}
+
+.daniel figure img {
+    width: 6%;
+    border: 1px solid var(--Light-gray);
+}
+
+.daniel figcaption{
+    padding-left: 15px;
+}
+
+.daniel h2 {
+    padding: 10px 0px 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+    z-index: 2;
+    position: absolute;
+
+}
+
+.daniel p { 
+    position: absolute;
+    bottom: 35px;
+}
+
+/* jonathan section */
+
+.jonathan {
+    grid-area: jonathan;
+    background-color: var(--Very-dark-grayish-blue);
+    border-radius: 10px;
+    color: var(--White);
+}
+
+.jonathan img {
+    border: 1px solid var(--White);
+    width: 12%
+}
+
+.jonathan h2 {
+    padding: 10px 0px 20px;
+    font-weight: 500;
+}
+
+.page-container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qout-mark {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    color: var(--Light-gray);
+    top: 0;
+    right: 50px;
+    z-index: 1;
+}
