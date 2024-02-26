@@ -31,6 +31,7 @@ Users should be able to:
 <figure>
   <img src="desktop-screenshot.png" alt="screenshot">
 </figure>
+
 ### Links
 
 - Solution URL: [GItHub](https://github.com/abdellah-abadou/FM-Testimonials-Grid-Section-Main)
